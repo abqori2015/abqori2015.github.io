@@ -1,0 +1,422 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+navbar,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+navbar,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*My CSS*/
+
+body {
+  background-color: #181818;
+  font-family: verdana;
+  height: 2000px;
+}
+
+body p {
+  font-size: 13px;
+  color: #dddddd;
+  margin-top: 10px;
+}
+
+/* NAVBAR CONTAINER */
+.navbar {
+  background-color: #1a1a1a; /* Sesuaikan warna latar navbar kamu */
+  padding: 15px 30px;
+  /* Menghilangkan height fixed agar tinggi navbar fleksibel menyesuaikan isi */
+}
+
+/* LOGO (SISI KIRI) */
+.navbar .logo {
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+  color: #ffffff;
+  margin: 0;
+  line-height: 40px; /* Menyejajarkan tinggi secara vertikal */
+}
+
+/* LIST NAVIGASI (SISI KANAN) */
+.navbar .nav-links {
+  float: right;
+  list-style: none; /* Menghilangkan titik (bullet point) bawaan <ul> */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  float: left; /* Berjejer dari kiri ke kanan (Home -> Contact) */
+  margin-left: 20px; /* Jarak antar menu */
+}
+
+.navbar .nav-links a {
+  color: #bbbbbb;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 40px;
+  display: inline-block;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* EFEK HOVER */
+.navbar .nav-links a:hover {
+  color: #ffffff;
+  transform: scale(
+    1.1
+  ); /* Efek membesar yang lebih halus tanpa merusak layout */
+}
+
+/* PENETRAL FLOAT */
+.clear {
+  clear: both;
+}
+
+.section {
+  padding: 30px 50px 50px 50px;
+}
+
+.section-title {
+  font-size: 20px;
+  color: #e86e3c;
+  margin-bottom: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* HERO SECTION */
+.hero {
+  background-image: url(./image/2.png);
+  background-size: cover;
+  background-position: center;
+  height: 380px;
+  padding: 60px 50px; /* Padding memberi ruang bagian dalam banner */
+  box-sizing: border-box;
+}
+
+/* 1. TEKS DIPASANG FLOAT LEFT */
+.prfl {
+  float: left;
+  width: 60%; /* Memberi batas ruang untuk teks */
+}
+
+.halo {
+  color: #e86e3c;
+  font-size: 35px;
+  margin-bottom: 6px;
+}
+
+.nme {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.juni {
+  color: #e86e3c;
+  font-size: 23px;
+  margin-top: 13px;
+}
+
+/* Styling Langsung pada Tag <a> Tombol */
+.prfl a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hrm {
+  width: 120px;
+  height: 60px;
+  background-color: #e86e3c;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 10px;
+  color: black;
+  margin-top: 35px;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.hrm:hover {
+  background-color: #e7602a;
+  transform: scale(1.1);
+}
+
+.mcv {
+  width: 120px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 10px;
+  color: #eaeaea;
+  margin-top: 35px;
+  font-size: 20px;
+  margin-left: 10px;
+  transition: 0.4s;
+  box-sizing: border-box;
+}
+
+.mcv:hover {
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+
+/* 2. GAMBAR DIPASANG FLOAT RIGHT */
+.gambar {
+  float: right;
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Mencegah gambar gepeng */
+  border-radius: 50%;
+  border: 3px solid #e86e3c; /* Ring oranye opsional di sekitar foto */
+  margin-top: 20px; /* Menyesuaikan posisi vertikal agar pas dengan teks */
+}
+
+/* 3. PENETRALISIR FLOAT */
+.clear2 {
+  clear: both;
+}
+/* HERO SECTION END */
+
+/* ABOUT SECTION */
+
+.about {
+  background-color: #1f1f1f;
+}
+
+.about p {
+  font-size: 14.5px;
+}
+
+.about-img {
+  margin: 8px 20px 0px 0px;
+  background-color: rgb(36, 36, 36);
+  border-radius: 10px;
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+.about-text {
+  overflow: hidden;
+}
+
+.nama {
+  color: #ffff;
+  margin-top: 20px;
+}
+
+.bnam {
+  color: #9999;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.Sandika {
+  color: lightskyblue;
+  text-decoration: none;
+}
+
+.mw {
+  color: #e86e3c;
+  text-decoration: none;
+}
+
+.counter {
+  color: #eaeaea;
+  text-transform: capitalize;
+  display: inline-block;
+  margin: 20px 15px 20px 0px;
+}
+
+.count {
+  color: #e86e3c;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* ABOUT SECTION END */
+
+/* MY SKILL SECTION */
+.skill {
+  background-color: #181818;
+}
+
+.skill-text {
+  margin: 20px 0px 20px 0px;
+  font-size: 17px;
+  color: #999;
+}
+
+.skill-container {
+  text-align: center;
+}
+
+.skill-set {
+  padding: 25px 50px;
+  background-color: #292929;
+  margin: 0px 5px 0px 5px;
+  color: #e86e3c;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 12px;
+}
+
+.skillcount {
+  display: block;
+  color: #eaeaea;
+}
+
+/* MY SKILL SECTION END */
+
+/* PROJECT SECTION */
+
+.project {
+  background-color: #1f1f1f;
+}
+
+.project-text {
+  margin: 20px 0px 20px 0px;
+  font-size: 17px;
+  color: #999;
+}
+
+.project-set {
+  width: 200px;
+  height: 125px;
+  background-color: #999;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 0 10px 0 10px;
+}
+
+/* PROJECT SECTION END */
