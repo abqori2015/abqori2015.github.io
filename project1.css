@@ -211,6 +211,14 @@ body p {
   text-align: center;
 }
 
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
 /* HERO SECTION */
 .hero {
   background-image: url(./image/2.png);
