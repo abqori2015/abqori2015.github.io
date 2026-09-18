@@ -133,7 +133,7 @@ table {
 body {
   background-color: #181818;
   font-family: verdana;
-  height: 2000px;
+  height: 1500px;
 }
 
 body p {
@@ -413,11 +413,20 @@ body p {
 .project-set {
   width: 200px;
   height: 125px;
-  background-color: #999;
+  background-color: #3a3a3a;
   display: inline-block;
   border-radius: 10px;
   margin: 0 10px 0 10px;
   position: relative;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.project-set:hover {
+  transform: scale(1.05);
+  background-color: #4d4d4d;
+  z-index: 10;
 }
 
 .demo {
@@ -434,3 +443,7 @@ body p {
 }
 
 /* PROJECT SECTION END */
+
+/*FOOTER SECTION*/
+
+/*FOOTER SECTION END*/
