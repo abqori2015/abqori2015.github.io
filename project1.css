@@ -453,5 +453,15 @@ body p {
 /* PROJECT SECTION END */
 
 /*FOOTER SECTION*/
+.footer {
+  background-color: #181818;
+}
 
+.fo {
+  color: #eaeaea;
+}
+
+ul.button li {
+  display: inline-block;
+}
 /*FOOTER SECTION END*/
