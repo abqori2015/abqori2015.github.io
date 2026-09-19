@@ -133,7 +133,7 @@ table {
 body {
   background-color: #181818;
   font-family: verdana;
-  height: 1500px;
+  height: 1450px;
 }
 
 body p {
@@ -144,9 +144,8 @@ body p {
 
 /* NAVBAR CONTAINER */
 .navbar {
-  background-color: #1a1a1a; /* Sesuaikan warna latar navbar kamu */
+  background-color: #1a1a1a;
   padding: 15px 30px;
-  /* Menghilangkan height fixed agar tinggi navbar fleksibel menyesuaikan isi */
 }
 
 /* LOGO (SISI KIRI) */
@@ -157,20 +156,20 @@ body p {
   font-family: Verdana, sans-serif;
   color: #ffffff;
   margin: 0;
-  line-height: 40px; /* Menyejajarkan tinggi secara vertikal */
+  line-height: 40px;
 }
 
 /* LIST NAVIGASI (SISI KANAN) */
 .navbar .nav-links {
   float: right;
-  list-style: none; /* Menghilangkan titik (bullet point) bawaan <ul> */
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .navbar .nav-links li {
-  float: left; /* Berjejer dari kiri ke kanan (Home -> Contact) */
-  margin-left: 20px; /* Jarak antar menu */
+  float: left;
+  margin-left: 20px;
 }
 
 .navbar .nav-links a {
@@ -187,9 +186,7 @@ body p {
 /* EFEK HOVER */
 .navbar .nav-links a:hover {
   color: #ffffff;
-  transform: scale(
-    1.1
-  ); /* Efek membesar yang lebih halus tanpa merusak layout */
+  transform: scale(1.1);
 }
 
 /* PENETRAL FLOAT */
@@ -225,14 +222,13 @@ body p {
   background-size: cover;
   background-position: center;
   height: 380px;
-  padding: 60px 50px; /* Padding memberi ruang bagian dalam banner */
+  padding: 60px 50px;
   box-sizing: border-box;
 }
 
-/* 1. TEKS DIPASANG FLOAT LEFT */
 .prfl {
   float: left;
-  width: 60%; /* Memberi batas ruang untuk teks */
+  width: 60%;
 }
 
 .halo {
@@ -253,7 +249,6 @@ body p {
   margin-top: 13px;
 }
 
-/* Styling Langsung pada Tag <a> Tombol */
 .prfl a {
   text-decoration: none;
   display: inline-block;
@@ -298,24 +293,19 @@ body p {
   transform: scale(1.1);
 }
 
-/* 2. GAMBAR DIPASANG FLOAT RIGHT */
 .gambar {
   float: right;
   width: 200px;
   height: 200px;
-  object-fit: cover; /* Mencegah gambar gepeng */
+  object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #e86e3c; /* Ring oranye opsional di sekitar foto */
-  margin-top: 20px; /* Menyesuaikan posisi vertikal agar pas dengan teks */
+  border: 3px solid #e86e3c;
+  margin-top: 20px;
 }
 
-/* 3. PENETRALISIR FLOAT */
 .clear2 {
   clear: both;
 }
-/* HERO SECTION END */
-
-/* ABOUT SECTION */
 
 .about {
   background-color: #1f1f1f;
@@ -453,15 +443,53 @@ body p {
 /* PROJECT SECTION END */
 
 /*FOOTER SECTION*/
-.footer {
-  background-color: #181818;
+
+.section.footer {
+  background-color: #111111;
+  padding: 40px 50px;
 }
 
-.fo {
-  color: #eaeaea;
+.footer-col {
+  float: left;
+  width: 33.33%;
 }
 
-ul.button li {
+.footer-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 13px;
+  color: #aaaaaa;
+  margin-top: 5px;
+}
+
+.footer-menu {
+  list-style: none;
+}
+
+.footer-menu li {
   display: inline-block;
 }
+
+.footer-menu a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+  color: #ffffff;
+}
+
+.footer-menu .separator {
+  color: #666666;
+  margin: 0 6px;
+  font-size: 13px;
+}
+
 /*FOOTER SECTION END*/
