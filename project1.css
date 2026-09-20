@@ -316,11 +316,10 @@ body p {
 }
 
 .about-img {
-  margin: 8px 20px 0px 0px;
   border-radius: 10px;
   float: left;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 .about-text {
