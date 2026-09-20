@@ -398,6 +398,20 @@ body p {
 
 .project {
   background-color: #1f1f1f;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.project-set-a,
+.project-set-b {
+  cursor: pointer;
+}
+
+.section.project a {
+  text-decoration: none !important;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
 }
 
 .project-text {
@@ -406,20 +420,39 @@ body p {
   color: #999;
 }
 
-.project-set {
+.project-set-a {
   width: 200px;
   height: 125px;
+  background-image: url(image/project1.png);
   background-color: #3a3a3a;
   display: inline-block;
   border-radius: 10px;
+  text-decoration: none;
   margin: 0 10px 0 10px;
   position: relative;
-  transition:
-    transform 0.3s ease,
-    background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.project-set:hover {
+.project-set-b {
+  width: 200px;
+  height: 125px;
+  background-image: url(image/projectz.png);
+  background-color: #3a3a3a;
+  display: inline-block;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 0 10px 0 10px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.project-set-a:hover {
+  transform: scale(1.05);
+  background-color: #4d4d4d;
+  z-index: 10;
+}
+
+.project-set-b:hover {
   transform: scale(1.05);
   background-color: #4d4d4d;
   z-index: 10;
@@ -429,6 +462,8 @@ body p {
   font-size: 13px;
   font-weight: 600;
   background-color: #e86e3c;
+  text-decoration: none !important;
+  color: black;
   display: inline-block;
   margin: 10px 0 10px 0;
   line-height: 27px;
