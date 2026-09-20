@@ -402,6 +402,10 @@ body p {
   border-bottom: none;
 }
 
+.link-a {
+  margin-right: 20px;
+}
+
 .project-set-a,
 .project-set-b {
   cursor: pointer;
@@ -428,7 +432,7 @@ body p {
   display: inline-block;
   border-radius: 10px;
   text-decoration: none;
-  margin: 0 10px 0 10px;
+  /* margin: 0 10px 0 0; */
   position: relative;
   transition: 0.3s ease;
 }
@@ -436,12 +440,12 @@ body p {
 .project-set-b {
   width: 200px;
   height: 125px;
-  background-image: url(image/projectz.png);
+  background-image: url(image/project2.png);
   background-color: #3a3a3a;
   display: inline-block;
   border-radius: 10px;
   text-decoration: none;
-  margin: 0 10px 0 10px;
+  /* margin: 0 0 0 10px; */
   position: relative;
   transition: 0.3s ease;
 }
