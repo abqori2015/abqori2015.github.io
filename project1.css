@@ -130,11 +130,22 @@ table {
 
 /*My CSS*/
 
+/* === PERUBAHAN 2: html diberi tinggi penuh === */
+html {
+  height: 100%;
+}
+/* === AKHIR PERUBAHAN 2 === */
+
+/* === PERUBAHAN 3: body jadi flex kolom, height:1450px DIHAPUS === */
 body {
   background-color: #181818;
   font-family: verdana;
-  height: 1450px;
+  min-height: 100%;
+  min-height: 100dvh; /* lebih akurat di HP; browser lama abaikan baris ini */
+  display: flex;
+  flex-direction: column;
 }
+/* === AKHIR PERUBAHAN 3 === */
 
 body p {
   font-size: 13px;
@@ -146,6 +157,7 @@ body p {
 .navbar {
   background-color: #1a1a1a;
   padding: 15px 30px;
+  flex-shrink: 0; /* PERUBAHAN 4: navbar tidak ikut menyusut */
 }
 
 /* LOGO (SISI KIRI) */
@@ -196,6 +208,7 @@ body p {
 
 .section {
   padding: 30px 50px 50px 50px;
+  flex-shrink: 0; /* PERUBAHAN 5: tinggi section tidak dipaksa menyusut */
 }
 
 .section-title {
@@ -320,6 +333,7 @@ body p {
   float: left;
   width: 250px;
   height: 250px;
+  max-width: 100%; /* PERUBAHAN 6: gambar tidak melebihi layar HP */
 }
 
 .about-text {
@@ -432,7 +446,6 @@ body p {
   display: inline-block;
   border-radius: 10px;
   text-decoration: none;
-  /* margin: 0 10px 0 0; */
   position: relative;
   transition: 0.3s ease;
 }
@@ -445,7 +458,6 @@ body p {
   display: inline-block;
   border-radius: 10px;
   text-decoration: none;
-  /* margin: 0 0 0 10px; */
   position: relative;
   transition: 0.3s ease;
 }
@@ -484,6 +496,7 @@ body p {
 .section.footer {
   background-color: #111111;
   padding: 40px 50px;
+  margin-top: auto; /* PERUBAHAN 7: INI yang mendorong footer ke paling bawah */
 }
 
 .footer-col {
@@ -530,3 +543,112 @@ body p {
 }
 
 /*FOOTER SECTION END*/
+
+/* === PERUBAHAN 8: tampilan khusus layar HP (maks 600px) === */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .navbar .logo,
+  .navbar .nav-links {
+    float: none;
+  }
+
+  .navbar .nav-links li {
+    float: none;
+    display: inline-block;
+    margin: 0 8px;
+  }
+
+  .navbar .nav-links a {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .section {
+    padding: 25px 20px 35px 20px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 35px 20px;
+    text-align: center;
+  }
+
+  .prfl,
+  .gambar,
+  .about-img,
+  .footer-col {
+    float: none;
+  }
+
+  .prfl {
+    width: 100%;
+  }
+
+  .halo {
+    font-size: 26px;
+  }
+
+  .nme {
+    font-size: 30px;
+  }
+
+  .juni {
+    font-size: 18px;
+  }
+
+  .hrm,
+  .mcv {
+    width: 105px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    margin-top: 25px;
+  }
+
+  .gambar {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 25px auto 0 auto;
+  }
+
+  .about-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .skill-set {
+    padding: 18px 25px;
+    margin-bottom: 10px;
+  }
+
+  .project-set-a,
+  .project-set-b {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .link-a {
+    margin: 0 0 15px 0;
+  }
+
+  .section.footer {
+    padding: 30px 20px;
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .footer-col:last-of-type {
+    margin-bottom: 0;
+  }
+}
+/* === AKHIR PERUBAHAN 8 === */
