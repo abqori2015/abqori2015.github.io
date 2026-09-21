@@ -130,22 +130,19 @@ table {
 
 /*My CSS*/
 
-/* === PERUBAHAN 2: html diberi tinggi penuh === */
+/*  PERUBAHAN 2: html diberi tinggi penuh  */
 html {
   height: 100%;
 }
-/* === AKHIR PERUBAHAN 2 === */
+/*  AKHIR PERUBAHAN 2  */
 
-/* === PERUBAHAN 3: body jadi flex kolom, height:1450px DIHAPUS === */
+/*  PERUBAHAN 3: body jadi flex kolom, height:1450px DIHAPUS  */
 body {
   background-color: #181818;
   font-family: verdana;
-  min-height: 100%;
-  min-height: 100dvh; /* lebih akurat di HP; browser lama abaikan baris ini */
-  display: flex;
-  flex-direction: column;
+  height: 1450px;
 }
-/* === AKHIR PERUBAHAN 3 === */
+/*  AKHIR PERUBAHAN 3  */
 
 body p {
   font-size: 13px;
@@ -157,7 +154,7 @@ body p {
 .navbar {
   background-color: #1a1a1a;
   padding: 15px 30px;
-  flex-shrink: 0; /* PERUBAHAN 4: navbar tidak ikut menyusut */
+  flex-shrink: 0;
 }
 
 /* LOGO (SISI KIRI) */
@@ -208,7 +205,7 @@ body p {
 
 .section {
   padding: 30px 50px 50px 50px;
-  flex-shrink: 0; /* PERUBAHAN 5: tinggi section tidak dipaksa menyusut */
+  flex-shrink: 0;
 }
 
 .section-title {
@@ -333,7 +330,7 @@ body p {
   float: left;
   width: 250px;
   height: 250px;
-  max-width: 100%; /* PERUBAHAN 6: gambar tidak melebihi layar HP */
+  max-width: 100%;
 }
 
 .about-text {
@@ -446,6 +443,7 @@ body p {
   display: inline-block;
   border-radius: 10px;
   text-decoration: none;
+  /* margin: 0 10px 0 0; */
   position: relative;
   transition: 0.3s ease;
 }
@@ -458,6 +456,7 @@ body p {
   display: inline-block;
   border-radius: 10px;
   text-decoration: none;
+  /* margin: 0 0 0 10px; */
   position: relative;
   transition: 0.3s ease;
 }
@@ -496,7 +495,7 @@ body p {
 .section.footer {
   background-color: #111111;
   padding: 40px 50px;
-  margin-top: auto; /* PERUBAHAN 7: INI yang mendorong footer ke paling bawah */
+  margin-top: auto;
 }
 
 .footer-col {
