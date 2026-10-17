@@ -26,19 +26,20 @@
     </div> -->
 
     <!-- NAVBAR -->
-    <div class="navbar">
-      <h1 class="logo">Abdillah Abqori Ilmi</h1>
+    <nav>
+      <div class="logo">
+        <h1>Abdillah Abqori Ilmi</h1>
+      </div>
 
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skill</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#aboutid">About</a></li>
+        <li><a href="#skillid">Skill</a></li>
+        <li><a href="#projectid">Project</a></li>
+        <li><a href="#contactid">Contact</a></li>
       </ul>
+    </nav>
 
-      <div class="clear"></div>
-    </div>
     <!-- NAVBAR END-->
 
     <!-- <div class="section hero">
@@ -57,57 +58,59 @@
     <div class="section hero">
       <!-- Elemen Kiri (Float Left) -->
       <div class="prfl">
-        <div class="halo">Hello,</div>
-        <div class="nme">I'm Abqori</div>
-        <div class="juni">Junior Web Developer</div>
-        <a href="#" class="hrm">Hire Me!</a>
-        <a href="#" class="mcv">My CV</a>
+        <div>
+          <div class="halo">Hello,</div>
+          <div class="nme">I'm Abqori</div>
+          <div class="juni">Junior Web Developer</div>
+          <div class="flex">
+            <a href="#" class="hrm">Hire Me!</a>
+            <a href="#" class="mcv">My CV</a>
+          </div>
+        </div>
+        <!-- Elemen Kanan (Float Right) -->
+        <img src="./image/abqori2.jpg" alt="Foto Abqori" class="gambar" />
       </div>
-
-      <!-- Elemen Kanan (Float Right) -->
-      <img src="./image/abqori4.png" alt="Foto Abqori" class="gambar" />
-
-      <!-- Clearfix untuk menetralkan float -->
-      <div class="clear2"></div>
     </div>
     <!-- SECTION HERO END-->
 
     <!-- SECTION ABOUT -->
     <div class="section about" id="aboutid">
       <h2 class="section-title">ABOUT ME</h2>
-      <img src="./image/mylogo.png" alt="orang" class="about-img" />
-      <div class="about-text">
-        <h3 class="nama">Abdillah Abqori Ilmi</h3>
-        <h3 class="bnam">Junior Web Developer</h3>
+      <div class="flex">
+        <img src="./image/mylogo.png" alt="orang" class="about-img" />
+        <div class="about-text">
+          <h3 class="nama">Abdillah Abqori Ilmi</h3>
+          <h3 class="bnam">Junior Web Developer</h3>
 
-        <p>
-          Hi! I'm Abqori, a young programmer aspiring to become a cyber security
-          specialist. Currently, I'm mastering HTML and CSS. This portfolio is
-          my very first project, built with guidance from my brothers and coding
-          tutorials by
-          <a
-            href="https://www.youtube.com/@sandhikagalihWPU"
-            class="Sandika"
-            target="_blank"
-            >Sandika Galih
-          </a>
-          (WPU). You can also check out my other test project right here:
-          <a
-            class="mw"
-            target="_blank"
-            href="../Youtube_SandikaGalih/Projek_Video7/index3.html"
-            >MY WEBSITE</a
-          >
-        </p>
+          <p>
+            Hi! I'm Abqori, a young programmer aspiring to become a cyber
+            security specialist. Currently, I'm mastering HTML and CSS. This
+            portfolio is my very first project, built with guidance from my
+            brothers and coding tutorials by
+            <a
+              href="https://www.youtube.com/@sandhikagalihWPU"
+              class="Sandika"
+              target="_blank"
+              >Sandika Galih
+            </a>
+            (WPU). You can also check out my other test project right here:
+            <a
+              class="mw"
+              target="_blank"
+              href="../Youtube_SandikaGalih/Projek_Video7/index3.html"
+              >MY WEBSITE</a
+            >
+          </p>
 
-        <div class="counter">
-          <span class="count">5+</span> years of experience
+          <div class="counter">
+            <span class="count">5+</span> years of experience
+          </div>
+          <div class="counter">
+            <span class="count">2+</span> practice project
+          </div>
+          <div class="counter"><span class="count">3+</span> achievements</div>
+          <div class="counter"><span class="count">2</span> tech learned</div>
         </div>
-        <div class="counter">
-          <span class="count">2+</span> practice project
-        </div>
-        <div class="counter"><span class="count">3+</span> achievements</div>
-        <div class="counter"><span class="count">2</span> tech learned</div>
       </div>
     </div>
     <!-- SECTION ABOUT END-->
@@ -157,7 +160,7 @@
     <!-- SECTION PROJECT END -->
 
     <!-- SECTION FOOTER -->
-    <div class="section footer">
+    <div class="section footer" id="contactid">
       <div class="footer-col">
         <h3 class="footer-title">CONTACT</h3>
         <p class="footer-text">Bogor, Indonesia</p>

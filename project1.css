@@ -133,7 +133,8 @@ table {
 /*  PERUBAHAN 2: html diberi tinggi penuh  */
 html {
   height: 100%;
-  background-color: #181818; /* PERUBAHAN 9: samakan warna html dengan body */
+  background-color: #181818;
+  scroll-behavior: smooth;
 }
 /*  AKHIR PERUBAHAN 2  */
 
@@ -156,15 +157,25 @@ body p {
 }
 
 /* NAVBAR CONTAINER */
-.navbar {
+nav {
   background-color: #1a1a1a;
+  display: flex;
   padding: 15px 30px;
-  flex-shrink: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 /* LOGO (SISI KIRI) */
-.navbar .logo {
-  float: left;
+nav .logo {
   font-size: 20px;
   font-weight: bold;
   font-family: Verdana, sans-serif;
@@ -174,31 +185,20 @@ body p {
 }
 
 /* LIST NAVIGASI (SISI KANAN) */
-.navbar .nav-links {
-  float: right;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
-.navbar .nav-links li {
-  float: left;
-  margin-left: 20px;
-}
-
-.navbar .nav-links a {
+nav .nav-links a {
   color: #bbbbbb;
   text-decoration: none;
   font-size: 16px;
   line-height: 40px;
   display: inline-block;
-  transition:
-    color 0.3s ease,
-    transform 0.3s ease;
+  transition: 0.5s ease;
+  transform: 0.5s ease;
+  text-indent: 20px;
 }
 
 /* EFEK HOVER */
-.navbar .nav-links a:hover {
+nav .nav-links a:hover {
   color: #ffffff;
   transform: scale(1.1);
 }
@@ -236,14 +236,15 @@ body p {
   background-image: url(./image/2.png);
   background-size: cover;
   background-position: center;
-  height: 380px;
+  height: 670px;
   padding: 60px 50px;
+  padding-top: 100px;
   box-sizing: border-box;
 }
 
 .prfl {
-  float: left;
-  width: 60%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .halo {
@@ -309,17 +310,17 @@ body p {
 }
 
 .gambar {
-  float: right;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #e86e3c;
+
   margin-top: 20px;
 }
 
-.clear2 {
-  clear: both;
+.flex {
+  display: flex;
 }
 
 .about {
@@ -332,7 +333,7 @@ body p {
 
 .about-img {
   border-radius: 10px;
-  float: left;
+
   width: 250px;
   height: 250px;
   max-width: 100%;
@@ -550,23 +551,23 @@ body p {
 
 /* === PERUBAHAN 8: tampilan khusus layar HP (maks 600px) === */
 @media (max-width: 600px) {
-  .navbar {
+  nav {
     padding: 15px 20px;
     text-align: center;
   }
 
-  .navbar .logo,
-  .navbar .nav-links {
+  nav.logo,
+  nav.nav-links {
     float: none;
   }
 
-  .navbar .nav-links li {
+  nav.nav-links li {
     float: none;
     display: inline-block;
     margin: 0 8px;
   }
 
-  .navbar .nav-links a {
+  nav.nav-links a {
     font-size: 14px;
     line-height: 30px;
   }
