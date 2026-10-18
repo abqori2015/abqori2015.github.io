@@ -172,6 +172,7 @@ nav ul {
   display: flex;
   margin: 0;
   padding: 0;
+  text-indent: 20px;
 }
 
 /* LOGO (SISI KIRI) */
@@ -191,10 +192,8 @@ nav .nav-links a {
   text-decoration: none;
   font-size: 16px;
   line-height: 40px;
-  display: inline-block;
   transition: 0.5s ease;
   transform: 0.5s ease;
-  text-indent: 20px;
 }
 
 /* EFEK HOVER */
@@ -204,9 +203,6 @@ nav .nav-links a:hover {
 }
 
 /* PENETRAL FLOAT */
-.clear {
-  clear: both;
-}
 
 .section {
   padding: 30px 50px 50px 50px;
@@ -221,14 +217,6 @@ nav .nav-links a:hover {
 
 .center {
   text-align: center;
-}
-
-.left {
-  text-align: left;
-}
-
-.right {
-  text-align: right;
 }
 
 /* HERO SECTION */
@@ -267,7 +255,6 @@ nav .nav-links a:hover {
 
 .prfl a {
   text-decoration: none;
-  display: inline-block;
 }
 
 .hrm {
@@ -364,10 +351,14 @@ nav .nav-links a:hover {
   text-decoration: none;
 }
 
+.counter-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .counter {
   color: #eaeaea;
   text-transform: capitalize;
-  display: inline-block;
   margin: 20px 15px 20px 0px;
 }
 
@@ -402,7 +393,6 @@ nav .nav-links a:hover {
   background-color: #292929;
   margin: 0px 5px 0px 5px;
   color: #e86e3c;
-  display: inline-block;
   font-size: 15px;
   border-radius: 12px;
   text-align: center;
@@ -423,6 +413,11 @@ nav .nav-links a:hover {
   border-bottom: none;
 }
 
+.project-container {
+  display: flex;
+  justify-content: center;
+}
+
 .link-a {
   margin-right: 20px;
 }
@@ -434,7 +429,6 @@ nav .nav-links a:hover {
 
 .section.project a {
   text-decoration: none !important;
-  display: inline-block;
   vertical-align: top;
   font-size: 0;
 }
@@ -450,7 +444,6 @@ nav .nav-links a:hover {
   height: 125px;
   background-image: url(image/project1.png);
   background-color: #3a3a3a;
-  display: inline-block;
   border-radius: 10px;
   text-decoration: none;
   /* margin: 0 10px 0 0; */
@@ -463,7 +456,6 @@ nav .nav-links a:hover {
   height: 125px;
   background-image: url(image/project2.png);
   background-color: #3a3a3a;
-  display: inline-block;
   border-radius: 10px;
   text-decoration: none;
   /* margin: 0 0 0 10px; */
@@ -489,7 +481,6 @@ nav .nav-links a:hover {
   background-color: #e86e3c;
   text-decoration: none !important;
   color: black;
-  display: inline-block;
   margin: 10px 0 10px 0;
   line-height: 27px;
   border-radius: 5px;
@@ -530,10 +521,7 @@ nav .nav-links a:hover {
 
 .footer-menu {
   list-style: none;
-}
-
-.footer-menu li {
-  display: inline-block;
+  display: flex;
 }
 
 .footer-menu a {
