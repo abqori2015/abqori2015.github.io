@@ -333,7 +333,6 @@ nav .nav-links a:hover {
 
 .about-img {
   border-radius: 10px;
-
   width: 250px;
   height: 250px;
   max-width: 100%;
@@ -341,6 +340,7 @@ nav .nav-links a:hover {
 
 .about-text {
   overflow: hidden;
+  line-height: 1.6;
 }
 
 .nama {
@@ -382,6 +382,8 @@ nav .nav-links a:hover {
 /* MY SKILL SECTION */
 .skill {
   background-color: #181818;
+
+  align-items: centers;
 }
 
 .skill-text {
@@ -391,7 +393,8 @@ nav .nav-links a:hover {
 }
 
 .skill-container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .skill-set {
@@ -402,6 +405,7 @@ nav .nav-links a:hover {
   display: inline-block;
   font-size: 15px;
   border-radius: 12px;
+  text-align: center;
 }
 
 .skillcount {
@@ -502,10 +506,11 @@ nav .nav-links a:hover {
   background-color: #111111;
   padding: 40px 50px;
   margin-top: auto;
+  display: flex;
 }
 
 .footer-col {
-  float: left;
+  /* float: left; */
   width: 33.33%;
 }
 
@@ -520,6 +525,7 @@ nav .nav-links a:hover {
   font-size: 13px;
   color: #aaaaaa;
   margin-top: 5px;
+  text-indent: 2px;
 }
 
 .footer-menu {
@@ -548,112 +554,3 @@ nav .nav-links a:hover {
 }
 
 /*FOOTER SECTION END*/
-
-/* === PERUBAHAN 8: tampilan khusus layar HP (maks 600px) === */
-@media (max-width: 600px) {
-  nav {
-    padding: 15px 20px;
-    text-align: center;
-  }
-
-  nav.logo,
-  nav.nav-links {
-    float: none;
-  }
-
-  nav.nav-links li {
-    float: none;
-    display: inline-block;
-    margin: 0 8px;
-  }
-
-  nav.nav-links a {
-    font-size: 14px;
-    line-height: 30px;
-  }
-
-  .section {
-    padding: 25px 20px 35px 20px;
-  }
-
-  .hero {
-    height: auto;
-    padding: 35px 20px;
-    text-align: center;
-  }
-
-  .prfl,
-  .gambar,
-  .about-img,
-  .footer-col {
-    float: none;
-  }
-
-  .prfl {
-    width: 100%;
-  }
-
-  .halo {
-    font-size: 26px;
-  }
-
-  .nme {
-    font-size: 30px;
-  }
-
-  .juni {
-    font-size: 18px;
-  }
-
-  .hrm,
-  .mcv {
-    width: 105px;
-    height: 48px;
-    line-height: 48px;
-    font-size: 16px;
-    margin-top: 25px;
-  }
-
-  .gambar {
-    display: block;
-    width: 150px;
-    height: 150px;
-    margin: 25px auto 0 auto;
-  }
-
-  .about-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .skill-set {
-    padding: 18px 25px;
-    margin-bottom: 10px;
-  }
-
-  .project-set-a,
-  .project-set-b {
-    width: 100%;
-    max-width: 260px;
-  }
-
-  .link-a {
-    margin: 0 0 15px 0;
-  }
-
-  .section.footer {
-    padding: 30px 20px;
-  }
-
-  .footer-col {
-    width: 100%;
-    margin-bottom: 25px;
-  }
-
-  .footer-col:last-of-type {
-    margin-bottom: 0;
-  }
-}
-/* === AKHIR PERUBAHAN 8 === */
