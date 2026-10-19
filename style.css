@@ -491,6 +491,44 @@ nav .nav-links a:hover {
 
 /* PROJECT SECTION END */
 
+/* ACHIEVEMENT SECTION */
+.achievement {
+  display: flex;
+  justify-content: center;
+}
+
+.main-achievement-cont {
+  display: flex;
+}
+
+.achievement-container {
+  display: flex;
+}
+
+.achievement-set-a {
+  width: 125px;
+  height: 125px;
+  /* background-image: url(image/project1.png); */
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 10px 0 0 0;
+  transition: 0.3s ease;
+}
+
+.achievement-set-b {
+  width: 125px;
+  height: 125px;
+  /* background-image: url(image/project1.png); */
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 10px 0 0 0;
+  transition: 0.3s ease;
+}
+
+/* ACHIEVEMENT SECTION END */
+
 /*FOOTER SECTION*/
 
 .section.footer {
