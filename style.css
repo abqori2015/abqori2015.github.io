@@ -183,6 +183,7 @@ nav .logo {
   color: #ffffff;
   margin: 0;
   line-height: 40px;
+  z-index: 99999999;
 }
 
 /* LIST NAVIGASI (SISI KANAN) */
@@ -499,13 +500,18 @@ nav .nav-links a:hover {
 
 .main-achievement-cont {
   display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .achievement-container {
   display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
 }
 
-.achievement-set-a {
+.achievement-set {
   width: 125px;
   height: 125px;
   /* background-image: url(image/project1.png); */
@@ -514,18 +520,98 @@ nav .nav-links a:hover {
   text-decoration: none;
   margin: 10px 0 0 0;
   transition: 0.3s ease;
+  overflow: hidden;
+  filter: brightness(75%) blur(1px);
 }
 
-.achievement-set-b {
-  width: 125px;
-  height: 125px;
-  /* background-image: url(image/project1.png); */
-  background-color: #3a3a3a;
-  border-radius: 10px;
-  text-decoration: none;
-  margin: 10px 0 0 0;
-  transition: 0.3s ease;
+.achievement-set:hover {
+  transform: scale(1.1);
+  filter: brightness(100%);
 }
+
+.achievement-gallery {
+  display: flex;
+}
+
+.achievement-container .achievement-gallery .thumb a img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  filter: brightness(75%) blur(1px);
+}
+
+.achievement-container .thumb a img:hover {
+  transform: scale(1.1);
+  filter: brightness(100%) blur(0);
+}
+
+/* OVERLAY */
+
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-radius: 0%;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  transition: 0.8s;
+}
+
+.overlay img {
+  margin: 50px auto 0;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 0;
+  /* box-shadow: 3px 3px 4px gold; */
+}
+
+.overlay:target img {
+  animation: zoom-fade 1s;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay .close {
+  text-decoration: none;
+  color: #eaeaea;
+  font-size: 15px;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  margin-left: -10px;
+  border: 1px solid #eaeaea;
+  line-height: 15px;
+  padding: 3px 4px 0 4px;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.overlay:target .close {
+  animation: slide-fade 1s 1s forwards;
+}
+
+.overlay:target .next {
+  animation: fade 1s 1s forwards;
+}
+
+.overlay:target .prev {
+  animation: fade 1s 1s forwards;
+}
+
+/* OVERLAY END */
 
 /* ACHIEVEMENT SECTION END */
 
@@ -580,3 +666,36 @@ nav .nav-links a:hover {
 }
 
 /*FOOTER SECTION END*/
+
+/* ANIMATION */
+
+@keyframes zoom-fade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-fade {
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
