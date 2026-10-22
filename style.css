@@ -450,6 +450,7 @@ nav .nav-links a:hover {
   /* margin: 0 10px 0 0; */
   position: relative;
   transition: 0.3s ease;
+  filter: brightness(75%) blur(1px);
 }
 
 .project-set-b {
@@ -462,18 +463,21 @@ nav .nav-links a:hover {
   /* margin: 0 0 0 10px; */
   position: relative;
   transition: 0.3s ease;
+  filter: brightness(75%) blur(1px);
 }
 
 .project-set-a:hover {
   transform: scale(1.05);
   background-color: #4d4d4d;
   z-index: 10;
+  filter: brightness(100%) blur(0);
 }
 
 .project-set-b:hover {
   transform: scale(1.05);
   background-color: #4d4d4d;
   z-index: 10;
+  filter: brightness(100%) blur(0);
 }
 
 .demo {
@@ -572,6 +576,15 @@ nav .nav-links a:hover {
   /* box-shadow: 3px 3px 4px gold; */
 }
 
+.overlay .ser-container {
+  margin: auto;
+  background-color: #4d4d4d;
+  width: 800px;
+  height: 500px;
+  border-radius: 15px;
+  margin-top: 75px;
+}
+
 .overlay:target img {
   animation: zoom-fade 1s;
 }
@@ -586,16 +599,10 @@ nav .nav-links a:hover {
 
 .overlay .close {
   text-decoration: none;
-  color: #eaeaea;
-  font-size: 15px;
   position: absolute;
-  top: 2%;
-  left: 50%;
-  margin-left: -10px;
-  border: 1px solid #eaeaea;
-  line-height: 15px;
-  padding: 3px 4px 0 4px;
-  border-radius: 50%;
+  top: -1%;
+  right: 18%;
+  z-index: 99;
   opacity: 0;
 }
 
@@ -612,6 +619,30 @@ nav .nav-links a:hover {
 }
 
 /* OVERLAY END */
+
+/* NAVIGATION */
+
+.next {
+  width: 57px;
+  height: 59px;
+  background-image: url(./image/next2.png);
+  position: absolute;
+  top: 275px;
+  right: 150px;
+  text-indent: -999999999px;
+  opacity: 0;
+}
+
+.prev {
+  width: 57px;
+  height: 59px;
+  background-image: url(./image/prev2.png);
+  position: absolute;
+  top: 275px;
+  left: 150px;
+  text-indent: -999999999px;
+  opacity: 0;
+}
 
 /* ACHIEVEMENT SECTION END */
 
