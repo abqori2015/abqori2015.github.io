@@ -168,6 +168,16 @@ nav {
   z-index: 9;
 }
 
+body:has(#aboutid:target) nav a[href="#aboutid"],
+body:has(#skillid:target) nav a[href="#skillid"],
+body:has(#projectid:target) nav a[href="#projectid"],
+body:has(#achievementid:target) nav a[href="#achievementid"],
+body:has(#contactid:target) nav a[href="#contactid"] {
+  color: #e86e3c;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -317,7 +327,7 @@ nav .nav-links a:hover {
   top: 10px;
 }
 
-.profile-container-2 {
+.profile-container {
   position: relative;
   width: 320px;
   height: 320px;
@@ -325,7 +335,6 @@ nav .nav-links a:hover {
   justify-content: center;
   align-items: center;
   transition: 0.5s;
-
   right: 70px;
 }
 
