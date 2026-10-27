@@ -241,6 +241,7 @@ nav .nav-links a:hover {
   padding: 60px 50px;
   padding-top: 100px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .prfl {
@@ -248,6 +249,64 @@ nav .nav-links a:hover {
   justify-content: space-between;
   position: relative;
   top: 80px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e86e3c;
+  text-decoration: none;
+}
+
+.scroll-text {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  white-space: nowrap;
+  margin-bottom: 8px;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-down .arrows span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-right: 2px solid #e86e3c;
+  border-bottom: 2px solid #e86e3c;
+  opacity: 0.25;
+  animation: arrow-down 1.5s ease-in-out infinite;
+}
+
+.scroll-down .arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-down .arrows span + span {
+  margin-top: -2px;
+}
+
+.scroll-down .arrows span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.scroll-down .arrows span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.scroll-down:hover .scroll-text {
+  opacity: 1;
+}
+.scroll-down:hover .arrows span {
+  border-color: #ff956c;
 }
 
 .prfl .tprfl {
@@ -498,6 +557,7 @@ nav .nav-links a:hover {
 .skillcount {
   display: block;
   color: #eaeaea;
+  margin-bottom: 10px;
 }
 
 /* MY SKILL SECTION END */
@@ -854,23 +914,11 @@ nav .nav-links a:hover {
     box-shadow: 0 0 0 0 #f87538;
   }
 
-  /* 25% {
-    transform: scale(0.5);
-    opacity: 0.8;
-    box-shadow: 0 0 0 0 #ff854c;
-  } */
-
   50% {
     transform: scale(0.8);
     opacity: 1;
     box-shadow: 0 0 12px 15px #ff9d6f;
   }
-
-  /* 75% {
-    transform: scale(0.5);
-    opacity: 0.8;
-    box-shadow: 0 0 0 0 #ff854c;
-  } */
 
   100% {
     transform: scale(0.3);
@@ -878,3 +926,37 @@ nav .nav-links a:hover {
     box-shadow: 0 0 0 0 #f87538;
   }
 }
+
+@keyframes arrow-down {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(5px) rotate(45deg);
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .scroll-down {
+    bottom: 15px;
+    transform: translateX(-50%) scale(0.9);
+  }
+  .scroll-text {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-down .arrows span {
+    animation: none;
+    opacity: 0.8;
+  }
+}
+
+/* RESPONSIVE END */
