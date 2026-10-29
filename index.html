@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -27,7 +31,15 @@
         <li><a href="#achievementid">Achievement</a></li>
         <li><a href="#contactid">Contact</a></li>
       </ul>
+
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
+    <script src="script.js"></script>
     <!-- NAVBAR END-->
 
     <!-- SECTION HERO -->
@@ -92,17 +104,46 @@
             the next challenge.
           </p>
 
-          <div class="counter-container">
-            <div class="counter">
-              <span class="count">1+</span> years of experience
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fa-solid fa-calendar-check"></i>
+              </div>
+              <div class="stat-info">
+                <h3>1+</h3>
+                <p>Years of experience</p>
+              </div>
             </div>
-            <div class="counter">
-              <span class="count">2+</span> practice project
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="stat-info">
+                <h3>5+</h3>
+                <p>Practice Project</p>
+              </div>
             </div>
-            <div class="counter">
-              <span class="count">3+</span> achievements
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div class="stat-info">
+                <h3>3+</h3>
+                <p>Achievements</p>
+              </div>
             </div>
-            <div class="counter"><span class="count">5</span> tech learned</div>
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="stat-info">
+                <h3>4+</h3>
+                <p>Tech Learned</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -113,13 +154,49 @@
     <div class="section skill" id="skillid">
       <h2 class="section-title center">MY SKILL</h2>
       <p class="skill-text center">
-        Some basic skills that are being learned and practiced
+        Some basic skills that are being
+        <span class="l-p">learned and practiced</span>
       </p>
       <div class="skill-container">
-        <div class="skill-set"><span class="skillcount">HTML</span> 40%</div>
-        <div class="skill-set"><span class="skillcount">CSS</span> 20%</div>
-        <div class="skill-set"><span class="skillcount">PYTHON</span> 10%</div>
-        <div class="skill-set"><span class="skillcount">SCRATCH</span> 50%</div>
+        <div class="skill-card">
+          <i class="fa-brands fa-html5 skill-icon html-icon"></i>
+          <div class="perc">
+            <h3>HTML</h3>
+            <p>40%</p>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-brands fa-css3-alt skill-icon css-icon"></i>
+          <div class="perc">
+            <h3>CSS</h3>
+            <p>20%</p>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <img
+            src="./image/py-logo.png"
+            alt="Python"
+            class="skill-icon python-icon"
+          />
+          <div class="perc">
+            <h3>PYTHON</h3>
+            <p>10%</p>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <img
+            src="./image/Sc-logo.png"
+            alt="Scratch"
+            class="skill-icon scratch-icon"
+          />
+          <div class="perc">
+            <h3>SCRATCH</h3>
+            <p>50%</p>
+          </div>
+        </div>
       </div>
     </div>
     <!-- SECTION SKILL END-->
