@@ -1144,8 +1144,8 @@ nav .nav-links a:hover {
 
   /* Hero */
   .hero {
-    height: auto;
-    min-height: 650px;
+    /* height: auto;
+    min-height: 650px; */
     padding: 100px 35px 90px;
   }
 
@@ -1220,7 +1220,7 @@ nav .nav-links a:hover {
   /* Semua section */
   .section {
     padding: 30px 20px 40px;
-    scroll-margin-top: 105px;
+    scroll-margin-top: 40px;
   }
 
   .section-title {
@@ -1236,8 +1236,8 @@ nav .nav-links a:hover {
 
   /* HERO */
   .hero {
-    min-height: 0;
-    height: auto;
+    /* min-height: 0;
+    height: auto; */
     padding: 145px 20px 100px;
     background-position: center;
   }
@@ -1339,7 +1339,7 @@ nav .nav-links a:hover {
   /* PANAH DISCOVER MORE */
   .scroll-down {
     height: 76px;
-    bottom: 4px;
+    bottom: 5%;
     transform: translateX(-50%) scale(0.8);
   }
 
