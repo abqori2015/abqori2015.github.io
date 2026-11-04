@@ -757,7 +757,6 @@ nav .nav-links a:hover {
   background-color: #3a3a3a;
   border-radius: 10px;
   text-decoration: none;
-  /* margin: 0 10px 0 0; */
   position: relative;
   transition: 0.3s ease;
   filter: brightness(75%) blur(1px);
@@ -770,20 +769,26 @@ nav .nav-links a:hover {
   background-color: #3a3a3a;
   border-radius: 10px;
   text-decoration: none;
-  /* margin: 0 0 0 10px; */
   position: relative;
   transition: 0.3s ease;
   filter: brightness(75%) blur(1px);
 }
 
-.project-set-a:hover {
-  transform: scale(1.05);
-  background-color: #4d4d4d;
-  z-index: 10;
-  filter: brightness(100%) blur(0);
+.project-set-c {
+  width: 200px;
+  height: 125px;
+  background-image: url(image/project3.png);
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s ease;
+  filter: brightness(75%) blur(1px);
 }
 
-.project-set-b:hover {
+.project-set-a:hover,
+.project-set-b:hover,
+.project-set-c:hover {
   transform: scale(1.05);
   background-color: #4d4d4d;
   z-index: 10;
