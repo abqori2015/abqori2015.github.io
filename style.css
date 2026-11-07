@@ -760,7 +760,7 @@ nav .nav-links a:hover {
 #tab2:checked ~ .tab-nav label[for="tab2"],
 #tab3:checked ~ .tab-nav label[for="tab3"] {
   background-color: #505050;
-  color: #ff5702;
+  color: #fff;
   box-shadow: 0 4px 12px rgba(173, 173, 173, 0.3);
   border: 2px solid #ff723a;
   animation: tes 0.3s forwards;
@@ -772,6 +772,10 @@ nav .nav-links a:hover {
   margin-bottom: 20px;
 }
 
+.tab-nav i {
+  color: #e7602a;
+}
+
 .tab-btn {
   background-color: #302f2f;
   width: 200px;
@@ -781,7 +785,7 @@ nav .nav-links a:hover {
   border-radius: 10px;
   text-align: center;
   transition: 0.4s;
-  color: #fff;
+  color: #eaeaea;
 }
 
 .tab-content {
