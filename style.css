@@ -684,6 +684,12 @@ nav .nav-links a:hover {
   color: #1572b6;
 }
 
+.vsc-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
 .python-icon {
   width: 42px;
   height: 42px;
@@ -720,8 +726,8 @@ nav .nav-links a:hover {
 .fill-1,
 .fill-2,
 .fill-3,
-.fill-4,
-.fill-5 {
+.fill-5,
+.fill-50 {
   height: 100%;
   border-radius: 20px;
 }
@@ -739,11 +745,84 @@ nav .nav-links a:hover {
   width: 10%;
   background: #ff762f;
 }
-.fill-4 {
+.fill-50 {
   width: 50%;
   background: #ff762f;
 }
 
+/* Sembunyikan Radio Input */
+.tab-input {
+  display: none;
+}
+
+/* Styling Tombol Tab Aktif */
+#tab1:checked ~ .tab-nav label[for="tab1"],
+#tab2:checked ~ .tab-nav label[for="tab2"],
+#tab3:checked ~ .tab-nav label[for="tab3"] {
+  background-color: #505050;
+  color: #ff5702;
+  box-shadow: 0 4px 12px rgba(173, 173, 173, 0.3);
+  border: 2px solid #ff723a;
+  animation: tes 0.3s forwards;
+}
+
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  background-color: #302f2f;
+  width: 200px;
+  height: 30px;
+  margin: 0 30px 0 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.4s;
+  color: #fff;
+}
+
+.tab-content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Sembunyikan Semua Panel Konten */
+.panel {
+  display: none;
+  opacity: 0;
+}
+
+/* Tampilkan Panel yang Sesuai dengan Radio checked */
+#tab1:checked ~ .tab-content #panel1,
+#tab2:checked ~ .tab-content #panel2,
+#tab3:checked ~ .tab-content #panel3 {
+  display: block;
+  animation: fadeIn 0.7s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tes {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
 /* MY SKILL SECTION END */
 
 /* PROJECT SECTION */

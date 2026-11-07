@@ -165,95 +165,180 @@
         Some <span class="text-orange">basic skills</span> that are being
         <span class="text-orange">learned and practiced</span>
       </p>
-      <div class="skill-container">
-        <div class="skill-card">
-          <div class="skill-name">
-            <i class="fa-brands fa-html5 skill-icon html-icon"></i>
-            <div class="perc">
-              <h3>HTML</h3>
-              <p>40%</p>
-            </div>
-          </div>
-          <div class="skill-pgbr-cont">
-            <div class="track">
-              <div class="fill-1"></div>
-            </div>
-          </div>
+      <!-- 1. STRUKTUR HTML (RADIO BUTTON HACK) -->
+      <div class="css-tab-wrapper">
+        <!-- Radio Input Tersembunyi dengan Name Group yang sama -->
+        <input
+          type="radio"
+          id="tab1"
+          name="tab-group"
+          class="tab-input"
+          checked
+        />
+        <input type="radio" id="tab2" name="tab-group" class="tab-input" />
+        <input type="radio" id="tab3" name="tab-group" class="tab-input" />
+
+        <!-- Tombol Tab Pill (Label yang terhubung ke Radio Input) -->
+        <div class="tab-nav">
+          <label for="tab1" class="tab-btn"
+            ><i class="fa-solid fa-globe"></i> Web Development</label
+          >
+          <label for="tab2" class="tab-btn"
+            ><i class="fa-solid fa-terminal"></i> Programming</label
+          >
+          <label for="tab3" class="tab-btn"
+            ><i class="fa-solid fa-toolbox"></i> Dev Tools</label
+          >
         </div>
 
-        <div class="skill-card">
-          <div class="skill-name">
-            <i class="fa-brands fa-css3-alt skill-icon css-icon"></i>
-            <div class="perc">
-              <h3>CSS</h3>
-              <p>20%</p>
+        <!-- Konten Wadah -->
+        <div class="tab-content">
+          <div id="panel1" class="panel">
+            <div class="skill-container">
+              <div class="skill-card">
+                <div class="skill-name">
+                  <i class="fa-brands fa-html5 skill-icon html-icon"></i>
+                  <div class="perc">
+                    <h3>HTML</h3>
+                    <p>40%</p>
+                  </div>
+                </div>
+                <div class="skill-pgbr-cont">
+                  <div class="track">
+                    <div class="fill-1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">
+                  <i class="fa-brands fa-css3-alt skill-icon css-icon"></i>
+                  <div class="perc">
+                    <h3>CSS</h3>
+                    <p>20%</p>
+                  </div>
+                </div>
+                <div class="skill-pgbr-cont">
+                  <div class="track">
+                    <div class="fill-2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">
+                  <i
+                    class="fa-brands fa-js fa-2xl skill-icon"
+                    style="color: rgb(255, 212, 59)"
+                  ></i>
+                  <div class="perc">
+                    <h3>Javascript</h3>
+                    <p>10%</p>
+                  </div>
+                </div>
+                <div class="skill-pgbr-cont">
+                  <div class="track">
+                    <div class="fill-5"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="skill-pgbr-cont">
-            <div class="track">
-              <div class="fill-2"></div>
-            </div>
-          </div>
-        </div>
+          <div id="panel2" class="panel">
+            <div class="skill-container">
+              <div class="skill-card">
+                <div class="skill-name">
+                  <img
+                    src="./image/py-logo.png"
+                    alt="Python"
+                    class="skill-icon python-icon"
+                  />
+                  <div class="perc">
+                    <h3>Python</h3>
+                    <p>10%</p>
+                  </div>
+                </div>
+                <div class="skill-pgbr-cont">
+                  <div class="track">
+                    <div class="fill-3"></div>
+                  </div>
+                </div>
+              </div>
 
-        <div class="skill-card">
-          <div class="skill-name">
-            <img
-              src="./image/py-logo.png"
-              alt="Python"
-              class="skill-icon python-icon"
-            />
-            <div class="perc">
-              <h3>Python</h3>
-              <p>10%</p>
+              <div class="skill-card">
+                <div class="skill-name">
+                  <img
+                    src="./image/Sc-logo.png"
+                    alt="Scratch"
+                    class="skill-icon scratch-icon"
+                  />
+                  <div class="perc">
+                    <h3>Scratch</h3>
+                    <p>50%</p>
+                  </div>
+                </div>
+                <div class="skill-pgbr-cont">
+                  <div class="track">
+                    <div class="fill-50"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">
+                  <i
+                    class="fa-brands fa-js fa-2xl skill-icon"
+                    style="color: rgb(255, 212, 59)"
+                  ></i>
+                  <div class="perc">
+                    <h3>Javascript</h3>
+                    <p>10%</p>
+                  </div>
+                </div>
+                <div class="skill-pgbr-cont">
+                  <div class="track">
+                    <div class="fill-5"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="skill-pgbr-cont">
-            <div class="track">
-              <div class="fill-3"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-name">
-            <img
-              src="./image/Sc-logo.png"
-              alt="Scratch"
-              class="skill-icon scratch-icon"
-            />
-            <div class="perc">
-              <h3>Scratch</h3>
-              <p>50%</p>
-            </div>
-          </div>
-          <div class="skill-pgbr-cont">
-            <div class="track">
-              <div class="fill-4"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-name">
-            <i
-              class="fa-brands fa-js fa-2xl skill-icon"
-              style="color: rgb(255, 212, 59)"
-            ></i>
-            <div class="perc">
-              <h3>Javascript</h3>
-              <p>10%</p>
-            </div>
-          </div>
-          <div class="skill-pgbr-cont">
-            <div class="track">
-              <div class="fill-5"></div>
+          <div id="panel3" class="panel">
+            <div class="skill-container">
+              <div class="skill-card">
+                <div class="skill-name">
+                  <img class="vsc-icon" src="./image/vsc.png" alt="vsc" />
+                  <div class="perc">
+                    <h3>VSCode</h3>
+                    <p>50%</p>
+                  </div>
+                </div>
+                <div class="skill-pgbr-cont">
+                  <div class="track">
+                    <div class="fill-50"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">
+                  <i
+                    class="fa-brands fa-github fa-2xl"
+                    style="color: rgb(0, 0, 0)"
+                  ></i>
+                  <div class="perc">
+                    <h3>GitHub</h3>
+                    <p>20%</p>
+                  </div>
+                </div>
+                <div class="skill-pgbr-cont">
+                  <div class="track">
+                    <div class="fill-2"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- SECTION SKILL END-->
     </div>
-    <!-- SECTION SKILL END-->
 
     <!-- SECTION PROJECT -->
     <div class="section project center" id="projectid">
